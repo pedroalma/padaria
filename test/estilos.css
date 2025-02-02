@@ -1,0 +1,74 @@
+/* Estilos gerais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centraliza os links */
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Destaque */
+.destaque {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.destaque h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f26a25; /* Cor da imagem */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Produtos */
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produto {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
