@@ -1,74 +1,92 @@
-/* Estilos gerais */
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fefefe;
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Centraliza os links */
-}
-
-nav li {
-    display: inline;
-    margin: 0 10px;
-}
-
-/* Destaque */
-.destaque {
-    background-image: url("banner.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  
+  .heading {
     text-align: center;
-}
-
-.destaque h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #f26a25; /* Cor da imagem */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Produtos */
-.produtos {
-    padding: 20px;
-    text-align: center;
-}
-
-.produto {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.produto img {
-    max-width: 100%;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
     text-align: center;
-}
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff41ff, #ff4b2b);
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff41ff, #ff4b2b);
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 5px;
+    transition: 0.3s;
+  }
+  
+  .card-body .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Responsive media queries */
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 30px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  

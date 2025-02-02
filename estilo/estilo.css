@@ -1,13 +1,32 @@
 *{
     margin: 0;
-    background-color: #E8873B;
+    /* background-color: #E8873B; */
 }
-.header {
-    background-color: #D5772C;
+html{
+    height: 100%;
+} 
+body{
+    background-color: #E8873B;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column;
+}
+
+/* {1} */
+/* .ponto{
+    background-color: #D5772C;
+} */
+.header {
+    background-color: #D5772C; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; 
+    width: 100%;
+}
+.padaria{
+    background-color: #D5772C;
 }
 .parro{
     background-color: #D5772C;
@@ -17,20 +36,14 @@
     background-color: #D5772C;
     margin-top: 10px;
     display: flex;
-    justify-content: center; 
-    flex: 1; 
+    justify-content: center;
+    flex: 1;
 }
-
 .carro {
     background-color: #D5772C;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
-img{
-    background-color: #D5772C;
-}
-a{
-    background-color: #D5772C;
-}
+/* {1} */
 .h1-home{
     font-size: 50px;
     text-align: center;
@@ -43,12 +56,161 @@ a{
     margin-top: 30px;
     text-align: center;
 }
+.java{
+    height: 500px;
+}
+/* {2} */
 .footer-home{
+    margin-top: 30px;
+    background-color: #D5772C;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-} 
+}
 .grupo{
+    background-color: #D5772C;
     text-align: center
+}
+.inta{
+    background-color: #D5772C;
+    margin: 30px;
+}
+.intas{
+    background-color: #D5772C;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;    
+}
+.jao{
+    background-color: #D5772C;
+}
+.main-produtos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+} 
+/* .adiciona-div1{
+    height: 280px;
+    width: 220px;
+    display: grid;
+    align-content: space-around;
+} */
+.pao{
+    margin-top: 15px;
+}
+.adiciona{
+    border-radius: 15px;
+    height: 280px;
+    width: 220px;
+    background-color: #E7AE88;
+    margin-top: 5px;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Julius Sans One", serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    font-style: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.ponto-adic{
+    margin-top: 20px;
+}
+.adiciona-pro{
+    margin-top: 15px;
+    /* height: 0px;
+    width: 85%; */
+    padding: 12px 10px;
+    background-color: #D5772C;
+    font-size: 12px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center
+}
+.adiciona-div1{
+    margin-top: 55px;
+}
+.main-produtos {
+    flex: 1;
+} 
+
+.footer-home {
+    background-color: #D5772C;
+    text-align: center;
+    /* padding: 10px; */
+    position: relative; /* Padrão */
+} 
+
+/* Quando a tela for maior que 655px, o footer acompanha o conteúdo */
+@media only screen and (min-width: 655px) {
+    .footer-home {
+        position: relative;
+    }
+}
+
+/* Quando a tela for menor que 655px, o footer fica fixo no final */
+@media only screen and (max-width: 655px) {
+    .footer-home {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media only screen and (main > 655px) {
+        footer{
+            position: relative;
+        }
+}
+/* {2} */
+@media only screen and (max-width: 1142px) {
+    .java{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 974px) {
+    .java{
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 846px) {
+    .java{
+        height: 300px;
+    }
+    .h1-home{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .java{
+        height: 160px;
+    }
+    .h1-home{
+        font-size: 35px;
+    }
+    .jao{
+        height: 30px;
+    }
+    .intas{
+        height: 30px;
+    }
+
+}
+@media only screen and (max-width: 320px) {
+    .java{
+        height: 120px;
+    }
+    .h1-home{
+        font-size: 30px;
+    }
 }

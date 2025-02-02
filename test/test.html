@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria Seu João</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Responsive Flexbox Cards</title>
+    <link rel="stylesheet" href="estilos.css" />
 
-    <main>
-        <section class="destaque">
-            <h1>Bem-vindo à Padaria Seu João</h1>
-            <p>Pães fresquinhos e deliciosos todos os dias!</p>
-            <a href="#" class="btn">Peça Já</a>
-        </section>
+    <!-- /* tutorial here
+    https://www.youtube.com/watch?v=StnlVOm3ZZg&t=3s&ab_channel=WebZone */ -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>CSS Responsive Flexbox Cards</h1>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <h1>React</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              recusandae!
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
 
-        <section class="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="produto">
-                <img src="pao.jpg" alt="Pão">
-                <h3>Pão Francês</h3>
-                <p>R$ 2,50</p>
-            </div>
-            </section>
-    </main>
+        <div class="card">
+          <div class="card-header">
+            <h1>Vue</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              recusandae!
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Padaria Seu João</p>
-    </footer>
-</body>
+        <div class="card">
+          <div class="card-header">
+            <h1>Angular</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              recusandae!
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h1>JQuery</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              recusandae!
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
