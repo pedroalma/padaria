@@ -2,6 +2,10 @@
     margin: 0;
     /* background-color: #E8873B; */
 }
+:root{
+    --largura-elemento-1: 950px;
+    --proporcao-elemento-2: 940px;
+}
 html{
     height: 100%;
 } 
@@ -142,7 +146,7 @@ footer{
     align-content: center
 }
 .adiciona-div1{
-    margin: 45px;
+    margin: 90px;
     margin-top: 55px;
 }
 .main-produtos {
@@ -153,16 +157,16 @@ footer{
     background-color: #D5772C;
     text-align: center;
     /* padding: 10px; */
-    position: relative; /* Padrão */
+    position: absolute; /* Padrão */
 } 
 .pro_h1{
     display: flex;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     border-bottom: 1px #D9D9D9 solid;
     /* width: 700px; */
     justify-content: space-between;
     margin-left: 30px;
-    width: 950px;
+    width: var(--largura-elemento-1);
 }
 .h2{
     padding-left: 300px;
@@ -171,7 +175,7 @@ footer{
     padding-right: 120px;
 }
 .produtos-div1{
-    margin: 45px;
+    margin: 50px;
     margin-top: 55px;
     margin-left: 30px;
 }
@@ -179,30 +183,6 @@ footer{
     width: 700px;
 } */
 .produtos{
-    /* height: 210px;
-    border-radius: 15px;
-    /* height: 280px;
-    width: 220px; */
-    /* background-color: #E7AE88; */
-    /* margin-top: 5px; */
-    /* font-size: 10px; */
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: "Julius Sans One", serif;
-    font-weight: 600;
-    font-style: normal;
-    justify-content: center;
-    font-style: normal;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-    justify-content: space-evenly; */
-
     height: 210px;
     border-radius: 15px;
     /* background-color: #E7AE88; */
@@ -210,24 +190,36 @@ footer{
     /* font-size: 10px; */
     display: flex;
     font-family: "Julius Sans One", serif;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: lighter;
     font-style: normal;
     align-items: center;
     justify-content: space-between;
-    padding-right: 120px;
+    /* padding-right: 120px; */
 }
 #proas{
     padding-left: 10px;
-    width: 820px;
+    width: var(--proporcao-elemento-2);
     background-color: #E8873B;
-    border: 1px #D9D9D9 solid;
+    box-shadow: 1px 1px 20px 10px #d07935;
 }
 .poao{
     display: flex;
 }
 .h12{
     margin-top: 10px;
+    font-family: "Julius Sans One", serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+.nhu{
+    color:#ffffff;
+    font-family: "Julius Sans One", serif;
+    font-weight: lighter;
+    font-style: normal;
+    
+}
+.argko{
+    
 }
 .pro{
     /* margin-top: 15px; */
@@ -243,8 +235,8 @@ footer{
     /* height: 0px;
     width: 85%; */
     padding: 12px 10px;
-    background-color: #D5772C;
-    font-size: 30px;
+    background-color: #E8873B;
+    font-size: 33px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -254,24 +246,44 @@ footer{
     justify-content: center;
     width: 130px;
     height: 59px;
-    color: #D9D9D9;
+    color: #ffffff;
+    box-shadow: 0px 4px 5px 0px #b4692e;
+    border: 1px #dda176 solid;
+}
+.fonatr{
+        font-family: "Julius Sans One", serif;
+        font-weight: 400;
+        font-style: normal;
+      
 }
 .spa{
-    color: #D9D9D9;
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
     /* margin: 30px 0; */
+    padding-top: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .vad{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .caixapro{
-    margin-top: 15px;
+    margin-top: 3px;
     width: 400px;
     height: 210px;
     background-color: #E8873B;
     font-size: 10px;
     border-radius: 15px;
-    border: 1px #D9D9D9 solid;
+    /* border: 1px #D9D9D9 solid; */
+    box-shadow: 0px 0px 5px 2px #E7AE88;
+    color: #ffffff;
+    font-family: "Julius Sans One", serif;
+    font-weight: lighte;
+    font-style: initial;
 }
 .h1po{
     margin-left: 10px;
@@ -293,11 +305,22 @@ footer{
     /* width: 400px; */
     /* height: 210px; */
     background-color: #E8873B;
+    box-shadow: 0px 4px 5px 0px #b4692e;
     border: 1px #D9D9D9 solid;
     font-size: 10px;
-    border-radius: 15px;
+    border-radius: 12px;
     width: 100px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Julius Sans One", serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+.buttocon:hover{
+    background-color: #d27529;
 }
 .htp{
     display: flex;
@@ -310,19 +333,28 @@ footer{
     align-items: center;
 }
 .hpo a{
-    text-decoration: 1px #D9D9D9 underline ;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    text-decoration: 1px #ffffff underline ;
     font-size: 15px;
-    color: #D9D9D9;
+    color: #ffffff;
     /* border: 1px #D9D9D9 solid; */
 }
 .mais a{
     text-decoration: none;
     font-size: 20px;
 }
+.mais{
+    margin-top: 10px;
+}
 /* Quando a tela for maior que 655px, o footer acompanha o conteúdo */
-@media only screen and (min-width: 655px) {
+@media only screen and (max-width: 1920px) {
+
+
+@media only screen and (min-wid: 655px) {
     .footer-home {
-        position: relative;
+        position: absolute;
     }
 }
 
