@@ -90,7 +90,7 @@ footer{
 }
 .main-produtos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: wrap;
 } 
 /* .adiciona-div1{
@@ -101,6 +101,8 @@ footer{
 } */
 .pao{
     margin-top: 15px;
+    height: 140px;
+    width: 140px;
 }
 .adiciona{
     border-radius: 15px;
@@ -108,7 +110,7 @@ footer{
     width: 220px;
     background-color: #E7AE88;
     margin-top: 5px;
-    font-size: 10px;
+    /* font-size: 10px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -122,6 +124,7 @@ footer{
     align-content: center;
 }
 .ponto-adic{
+    font-size: 8px;
     margin-top: 20px;
 }
 .adiciona-pro{
@@ -139,6 +142,7 @@ footer{
     align-content: center
 }
 .adiciona-div1{
+    margin: 45px;
     margin-top: 55px;
 }
 .main-produtos {
@@ -151,7 +155,170 @@ footer{
     /* padding: 10px; */
     position: relative; /* Padrão */
 } 
+.pro_h1{
+    display: flex;
+    padding: 5px 0;
+    border-bottom: 1px #D9D9D9 solid;
+    /* width: 700px; */
+    justify-content: space-between;
+    margin-left: 30px;
+    width: 950px;
+}
+.h2{
+    padding-left: 300px;
+}
+.h3{
+    padding-right: 120px;
+}
+.produtos-div1{
+    margin: 45px;
+    margin-top: 55px;
+    margin-left: 30px;
+}
+/* div .produtos{
+    width: 700px;
+} */
+.produtos{
+    /* height: 210px;
+    border-radius: 15px;
+    /* height: 280px;
+    width: 220px; */
+    /* background-color: #E7AE88; */
+    /* margin-top: 5px; */
+    /* font-size: 10px; */
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Julius Sans One", serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    font-style: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-evenly; */
 
+    height: 210px;
+    border-radius: 15px;
+    /* background-color: #E7AE88; */
+    /* margin-top: 5px; */
+    /* font-size: 10px; */
+    display: flex;
+    font-family: "Julius Sans One", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-style: normal;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 120px;
+}
+#proas{
+    padding-left: 10px;
+    width: 820px;
+    background-color: #E8873B;
+    border: 1px #D9D9D9 solid;
+}
+.poao{
+    display: flex;
+}
+.h12{
+    margin-top: 10px;
+}
+.pro{
+    /* margin-top: 15px; */
+    height: 140px;
+    width: 140px;
+}
+.produto{
+    font-size: 8px;
+    margin-top: 20px;
+}
+.proam{
+    margin-top: 15px;
+    /* height: 0px;
+    width: 85%; */
+    padding: 12px 10px;
+    background-color: #D5772C;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 130px;
+    height: 59px;
+    color: #D9D9D9;
+}
+.spa{
+    color: #D9D9D9;
+    /* margin: 30px 0; */
+}
+.vad{
+    display: flex;
+    align-items: center;
+}
+.caixapro{
+    margin-top: 15px;
+    width: 400px;
+    height: 210px;
+    background-color: #E8873B;
+    font-size: 10px;
+    border-radius: 15px;
+    border: 1px #D9D9D9 solid;
+}
+.h1po{
+    margin-left: 10px;
+}
+.h1po2{
+    margin-right: 30px;
+}
+.h1p{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.h27{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.buttocon{
+    /* margin-top: 15px; */
+    /* width: 400px; */
+    /* height: 210px; */
+    background-color: #E8873B;
+    border: 1px #D9D9D9 solid;
+    font-size: 10px;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+}
+.htp{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.hpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hpo a{
+    text-decoration: 1px #D9D9D9 underline ;
+    font-size: 15px;
+    color: #D9D9D9;
+    /* border: 1px #D9D9D9 solid; */
+}
+.mais a{
+    text-decoration: none;
+    font-size: 20px;
+}
 /* Quando a tela for maior que 655px, o footer acompanha o conteúdo */
 @media only screen and (min-width: 655px) {
     .footer-home {
