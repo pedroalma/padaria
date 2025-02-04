@@ -2,10 +2,10 @@
     margin: 0;
     /* background-color: #E8873B; */
 }
-:root{
-    --largura-elemento-1: 950px;
-    --proporcao-elemento-2: 940px;
+:root {
+    --largura-base: 1050px;
 }
+
 html{
     height: 100%;
 } 
@@ -166,7 +166,8 @@ footer{
     /* width: 700px; */
     justify-content: space-between;
     margin-left: 30px;
-    width: var(--largura-elemento-1);
+    width: var(--largura-base);
+
 }
 .h2{
     padding-left: 300px;
@@ -175,9 +176,11 @@ footer{
     padding-right: 120px;
 }
 .produtos-div1{
-    margin: 50px;
+    width: calc(var(--largura-base));
+    /* margin: 50px; */
     margin-top: 55px;
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 /* div .produtos{
     width: 700px;
@@ -198,7 +201,7 @@ footer{
 }
 #proas{
     padding-left: 10px;
-    width: var(--proporcao-elemento-2);
+    
     background-color: #E8873B;
     box-shadow: 1px 1px 20px 10px #d07935;
 }
@@ -216,11 +219,10 @@ footer{
     font-family: "Julius Sans One", serif;
     font-weight: lighter;
     font-style: normal;
+    padding-right: 120px;
     
 }
-.argko{
-    
-}
+
 .pro{
     /* margin-top: 15px; */
     height: 140px;
@@ -284,6 +286,7 @@ footer{
     font-family: "Julius Sans One", serif;
     font-weight: lighte;
     font-style: initial;
+    margin-left: 150px;
 }
 .h1po{
     margin-left: 10px;
@@ -342,16 +345,45 @@ footer{
     /* border: 1px #D9D9D9 solid; */
 }
 .mais a{
-    text-decoration: none;
+    text-decoration: auto;
     font-size: 20px;
 }
 .mais{
     margin-top: 10px;
 }
 /* Quando a tela for maior que 655px, o footer acompanha o conteúdo */
-@media only screen and (max-width: 1920px) {
+/* @media only screen and (max-width: 1920px) {
+    .elemento-1 {
+        width: calc(var(--largura-elemento-1) - var(--largura-elemento-1));
+    }
 
-
+    .elemento-2 {
+        width: calc(var(--proporcao-elemento-2) - (var(--largura-elemento-1) - var(--largura-elemento-1)));  940px - (950px - 950px) = 940px 
+    }
+} */
+.input-grupo {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 25px;
+}
+.input-grupo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.input-grupo input , .input-grupo textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #1a0c2b;
+    box-sizing: border-box;
+}
+.buttocon .mh{
+    text-decoration: none;
+    font-size: 10px;
+}
 @media only screen and (min-wid: 655px) {
     .footer-home {
         position: absolute;
