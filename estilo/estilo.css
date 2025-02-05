@@ -393,7 +393,7 @@ footer{
 /* Quando a tela for menor que 655px, o footer fica fixo no final */
 @media only screen and (max-width: 655px) {
     .footer-home {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
     }
