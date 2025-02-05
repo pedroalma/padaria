@@ -389,16 +389,81 @@ footer{
     text-decoration: none;
     color: #FFFFFF;
 }
-/* @media only screen and (min-wid: 655px) {
-    .footer-home {
-        position: absolute;
+@media only screen and (max-width: 768px) {
+    .pro_h1{
+        width: 100%;
+    
     }
-} */
+    .produtos-div1{
+        width: 100%;
+    }
+    .h2 {
+        padding-left: 0;
+    }
+    .h3 {
+        padding-right: 0;
+    }
+} 
+@media only screen and (max-width: 1440px) {
+    .pro_h1{
+        width: calc(var( --largura-base) -200px );
+    
+    }
+    .produtos-div1{
+        width: calc(var(--largura-base) -200px);
+    }
+} 
+/* @media only screen and (max-width: 320px) {
+    .pro_h1{
+        width: calc(var( --largura-base) -500px );
+    
+    }
+    .produtos-div1{
+        width: calc(var(--largura-base) -500px);
+    }
+}  */
+ @media only screen and (min-width: 2153px) {
+    .vad{
+    display: block;
+    align-items: center;
+    }
+    .poaa{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gep{
+        display: flex;
+        align-items: center;
+        
+    }
+    .caixapro{
+        
+    }
+} 
+
+@media only screen and (min-width: 1536px) {
+    .vad{
+    display: block;
+    align-items: center;
+    }
+    .poaa{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gep{
+        display: flex;
+        align-items: center;
+        
+    }
+    .caixapro{
+        
+    }
+} 
 
 /* Quando a tela for menor que 655px, o footer fica fixo no final */
 @media only screen and (max-width: 1629px) {
     .footer-home {
-        position: relative;
+        position: absolute;
         bottom: 0;
         width: 100%;
     }
