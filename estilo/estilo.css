@@ -158,6 +158,7 @@ footer{
     text-align: center;
     /* padding: 10px; */
     position: absolute; /* Padrão */
+    height: 70px;
 } 
 .pro_h1{
     display: flex;
@@ -383,6 +384,10 @@ footer{
 .buttocon .mh{
     text-decoration: none;
     font-size: 10px;
+}
+.ponto{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 @media only screen and (min-wid: 655px) {
     .footer-home {
